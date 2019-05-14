@@ -1,5 +1,7 @@
 package _00_Sorting_Algorithms;
 
+import java.util.Arrays;
+
 public class BubbleSorter extends Sorter{
 	public BubbleSorter() {
 		type = "Bubble";
@@ -10,7 +12,8 @@ public class BubbleSorter extends Sorter{
 	//   progress on the graph.
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
-		
+		Arrays.sort(array);
+		display.updateDisplay();
 	}
 	
 }
