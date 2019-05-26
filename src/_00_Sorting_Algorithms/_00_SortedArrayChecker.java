@@ -1,5 +1,9 @@
 package _00_Sorting_Algorithms;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class _00_SortedArrayChecker {
 	//1. Write a static method called intArraySorted. 
 	//   This method takes in an array of integers
@@ -20,6 +24,8 @@ public static boolean intArraySorted(int integer[]) {
 	//   The method returns true if the double
 	//   array is in ascending order and false otherwise
 public static boolean doubleArraySorted(double doubles[]) {
+	double[] double2 =Arrays.copyOf(doubles, doubles.length);
+	Arrays.sort(double2);
 	boolean doubleArrayIsAscending = false;
 	
 	if(doubleArrayIsAscending==true) {
