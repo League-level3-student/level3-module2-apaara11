@@ -54,7 +54,11 @@ public class Algorithms {
 		
 		return null;
 	}
-	public static List<String> sortScores(List<Double> results) {
+	public static Object sortScores(List<Double> results) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public static Object sortDNA(List<String> unsortedSequences) {
 		// TODO Auto-generated method stub
 		return null;
 	}
