@@ -1,5 +1,7 @@
 package _02_More_Algorithms;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Algorithms {
@@ -12,6 +14,7 @@ public class Algorithms {
 
 		return 0;
 	}
+
 //---//
 	public static Object countPearls(List<Boolean> oysters) {
 		int pearls = 0;
@@ -23,43 +26,69 @@ public class Algorithms {
 		return pearls;
 	}
 //--//
-	public static double findTallest(List<Double> peeps) {
-		double biggestValue =0.0;
-		// TODO Auto-generated method stub
-	for(int i=0; i< peeps.size();i++) {
-		if(peeps.get(i)>= biggestValue) {
-			biggestValue=peeps.get(i);
-		}
-	}
-			return biggestValue;
-	}
 
-	public static Object findLongestWord(List<String> words) {	
-		
-		return null;
+	public static double findTallest(List<Double> peeps) {
+		double biggestValue = 0.0;
+		// TODO Auto-generated method stub
+		for (int i = 0; i < peeps.size(); i++) {
+			if (peeps.get(i) >= biggestValue) {
+				biggestValue = peeps.get(i);
+			}
+		}
+		return biggestValue;
 	}
+//--//
+
+	public static String findLongestWord(List<String> words) {
+		String longestWord = "";
+		for (int i = 0; i < words.size(); i++) {
+			if (words.get(i).length() > longestWord.length()) {
+				longestWord = words.get(i);
+			}
+		}
+		return longestWord;
+	}
+//--//
 
 	public static Object containsSOS(List<String> message1) {
 		// TODO Auto-generated method stub
-		String morseCode = "...---...";
+		String morseCode = " ... --- ... ";
 		// TODO Auto-generated method stub
-		for(int i=0; i<message1.size();i++) {
-			if(message1.get(i).equals(morseCode)) {
+		for (int i = 0; i < message1.size(); i++) {
+			if (message1.get(i).equals(morseCode)) {
 				return true;
 			}
-			else {
-				return false;
-			}
+
 		}
+
+		return false;
+	}
+//--//
+
+	public static List<Double> sortScores(List<Double> results) {
+		// TODO Auto-generated method stub
 		
-		return null;
+		Collections.sort(results);		
+		
+		return results;
 	}
-	public static Object sortScores(List<Double> results) {
+
+//--//
+
+	public static List<String> sortDNA(List<String> unsortedSequences) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		Collections.sort(unsortedSequences);
+		
+		return unsortedSequences;
 	}
-	public static Object sortDNA(List<String> unsortedSequences) {
+//--//
+
+	public static List<String> sortWords(List<String> words) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		Collections.sort(words);
+		
+		return words;
 	}
 }
